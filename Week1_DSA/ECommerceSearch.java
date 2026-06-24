@@ -1,29 +1,23 @@
-import java.util.HashMap;
+public class ECommerceSearch {
 
-class Product {
-    int productId;
-    String productName;
+    static int linearSearch(int arr[], int key) {
 
-    Product(int id, String name) {
-        productId = id;
-        productName = name;
+        for(int i=0;i<arr.length;i++) {
+
+            if(arr[i]==key)
+                return i;
+        }
+
+        return -1;
     }
-}
-
-public class InventoryManagementSystem {
 
     public static void main(String[] args) {
 
-        HashMap<Integer, Product> inventory =
-                new HashMap<>();
+        int arr[] = {10,20,30,40,50};
 
-        inventory.put(1, new Product(1, "Laptop"));
-        inventory.put(2, new Product(2, "Mouse"));
+        int result = linearSearch(arr,30);
 
-        System.out.println("Products Added");
-
-        inventory.remove(2);
-
-        System.out.println("Product Deleted");
+        System.out.println("Found at Index: "
+                + result);
     }
-          }
+}
