@@ -1,2 +1,0 @@
--- MySQL does not support Oracle packages.
--- Use stored procedures and functions with naming conventions.
