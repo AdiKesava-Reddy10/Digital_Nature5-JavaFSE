@@ -1,0 +1,1 @@
+Starter skeleton for Task 3 (HQL & Native Query).
